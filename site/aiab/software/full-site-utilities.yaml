@@ -18,6 +18,7 @@ data:
     - podsecuritypolicy
     - kubernetes-proxy
     - kubernetes-container-networking
+    - kubernetes-container-networking-tf
     - kubernetes-dns
     - kubernetes-etcd
     - kubernetes-haproxy

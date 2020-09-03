@@ -21,7 +21,7 @@ data:
   labels:
     dynamic:
       - beta.kubernetes.io/fluentd-ds-ready=true
-      - calico-etcd=enabled
+      - node-role.kubernetes.io/master=
       - kube-dns=enabled
       - kube-ingress=enabled
       - kubernetes-apiserver=enabled

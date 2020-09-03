@@ -612,6 +612,12 @@ data:
         reference: 200b5e902b3a176fbfbe669b6a10a254c9b50f5d
         subpath: helm-toolkit
         type: git
+    tungstenfabric:
+      tf-operator:
+        location: https://github.com/atsgen/tf-operator-helm-hook
+        reference: master
+        subpath: tf-operator
+        type: git
 
   files:
     kubernetes: https://dl.k8s.io/v1.17.3/kubernetes-node-linux-amd64.tar.gz
@@ -629,6 +635,9 @@ data:
       etcd:
         etcd: quay.io/coreos/etcd:v3.4.2
         etcdctl: quay.io/coreos/etcd:v3.4.2
+    tungstenfabric:
+      tf-operator:
+        tf_operator: atsgen/tf-operator:v0.0.1
     ceph:
       ceph-client:
         ceph_bootstrap: docker.io/openstackhelm/ceph-daemon:ubuntu_xenial-20191119
