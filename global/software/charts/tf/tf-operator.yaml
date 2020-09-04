@@ -49,6 +49,8 @@ data:
   namespace: atsgen
   protected:
     continue_processing: true
+  test:
+    timeout: 900
   wait:
     timeout: 600
     labels:
@@ -65,3 +67,28 @@ data:
     networking:
       ipForwarding: snat
       useHostNewtorkService: true
+  dependencies:
+    - tf-operator-htk
+---
+schema: armada/Chart/v1
+metadata:
+  schema: metadata/Document/v1
+  name: tf-operator-htk
+  layeringDefinition:
+    abstract: false
+    layer: global
+  storagePolicy: cleartext
+  substitutions:
+    - src:
+        schema: pegleg/SoftwareVersions/v1
+        name: software-versions
+        path: .charts.tungstenfabric.tf-operator-htk
+      dest:
+        path: .source
+data:
+  chart_name: tf-operator-htk
+  release: tf-operator-htk
+  namespace: tf-operator-htk
+  values: {}
+  dependencies: []
+...

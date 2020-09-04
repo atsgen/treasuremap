@@ -618,6 +618,11 @@ data:
         reference: master
         subpath: tf-operator
         type: git
+      tf-operator-htk:
+        location: https://opendev.org/openstack/openstack-helm-infra
+        reference: 03580ec90afa162c166661acf27f351b83565375
+        subpath: helm-toolkit
+        type: git
 
   files:
     kubernetes: https://dl.k8s.io/v1.17.3/kubernetes-node-linux-amd64.tar.gz
