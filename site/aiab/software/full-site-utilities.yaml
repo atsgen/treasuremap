@@ -23,7 +23,6 @@ data:
     - kubernetes-etcd
     - kubernetes-haproxy
     - kubernetes-core
-    - ingress-kube-system
     - osh-infra-nfs-provisioner
     - ucp-core
     - ucp-keystone
