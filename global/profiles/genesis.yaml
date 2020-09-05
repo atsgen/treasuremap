@@ -61,6 +61,13 @@ metadata:
         path: .genesis.ip
       dest:
         path: .ip
+    - src:
+        schema: pegleg/CommonAddresses/v1
+        name: common-addresses
+        path: .genesis.external_ip
+      dest:
+        path: .external_ip
+
 
     # Command prefix
     - src:

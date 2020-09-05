@@ -34,6 +34,12 @@ metadata:
         name: dev-configurables
         path: .hostip
       dest:
+        path: .genesis.external_ip
+    - src:
+        schema: dev/Configurables/v1
+        name: dev-configurables
+        path: .hostip
+      dest:
         path: .bootstrap.ip
     - src:
         schema: dev/Configurables/v1
@@ -65,6 +71,7 @@ data:
   genesis:
     hostname: REPLACEME
     ip: REPLACEME
+    external_ip: REPLACEME
 
   bootstrap:
     ip: REPLACEME
